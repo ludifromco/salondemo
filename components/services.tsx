@@ -4,38 +4,37 @@ import Image from 'next/image'
 import { Sparkles } from 'lucide-react'
 import { useInViewItemIds } from '@/hooks/use-in-view-item-ids'
 import { IMAGES } from '@/lib/images'
-import { bookingTelHref } from '@/lib/site'
+import { bookingHashHref } from '@/lib/site'
 
 const services = [
   {
     id: 1,
     name: 'Hair Services',
-    description: 'Cuts, color, and styling that fit your life — polished looks without the fuss.',
+    description: 'Fresh cuts, color, and styling designed to keep you looking polished between visits.',
     image: IMAGES.services.hair,
   },
   {
     id: 2,
     name: 'Nails',
-    description:
-      'Manicures and pedicures that stay neat longer — hands and feet you are proud to show off.',
+    description: 'Clean, polished, and long-lasting manicures and pedicures for a put-together finish.',
     image: IMAGES.services.nails,
   },
   {
     id: 3,
-    name: 'Lashes',
-    description: 'Effortless volume, every day — wake up looking refreshed.',
-    image: IMAGES.services.lashes,
+    name: 'Facials',
+    description: 'Restore your natural glow with personalized skin care that leaves your face refreshed.',
+    image: IMAGES.services.facials,
   },
   {
     id: 4,
-    name: 'Facials',
-    description: 'Healthy, glowing skin you can feel — tailored care for your skin type.',
-    image: IMAGES.services.facials,
+    name: 'Massage',
+    description: 'Relax, unwind, and relieve tension with soothing treatments tailored to your needs.',
+    image: IMAGES.services.massage,
   },
   {
     id: 5,
     name: 'Waxing',
-    description: 'Smooth, comfortable hair removal — precise, professional, and hygienic.',
+    description: 'Smooth results with gentle, professional waxing in a clean and comfortable setting.',
     image: IMAGES.services.waxing,
   },
 ]
@@ -55,10 +54,10 @@ export default function Services() {
             <Sparkles className="text-accent" size={22} aria-hidden />
           </div>
           <h2 className="text-4xl md:text-5xl font-serif font-semibold text-foreground mb-6 text-balance">
-            Full-service beauty, one welcoming place
+            Services designed around your comfort
           </h2>
           <p className="text-lg text-muted-foreground text-pretty leading-relaxed">
-            From hair to waxing, we focus on results you will notice and an experience you will want to repeat.
+            Choose the care you need now and book in seconds.
           </p>
         </div>
 
@@ -78,7 +77,7 @@ export default function Services() {
                 <div className="relative h-56 overflow-hidden bg-secondary">
                   <Image
                     src={service.image}
-                    alt={`${service.name} at Silk Beauty Salon`}
+                    alt={`${service.name} at Salon & Spa At Sun City Center`}
                     fill
                     className="object-cover"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -92,7 +91,7 @@ export default function Services() {
                     {service.description}
                   </p>
                   <a
-                    href={bookingTelHref()}
+                    href={bookingHashHref()}
                     className="w-full bg-primary text-primary-foreground py-3 rounded-full font-semibold text-sm hover:bg-primary/90 transition-colors text-center min-h-11 inline-flex items-center justify-center"
                   >
                     Book Appointment

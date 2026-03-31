@@ -10,13 +10,11 @@ import {
   SheetHeader,
   SheetTitle,
 } from '@/components/ui/sheet'
-import { SITE, bookingTelHref } from '@/lib/site'
+import { SITE, bookingHashHref, bookingTelHref } from '@/lib/site'
 
 const navItems = [
   { id: 'services', label: 'Services' },
   { id: 'pricing', label: 'Pricing' },
-  { id: 'before-after', label: 'Results' },
-  { id: 'about', label: 'About' },
   { id: 'faq', label: 'FAQ' },
 ] as const
 
@@ -49,7 +47,7 @@ export default function Header() {
             className="flex-shrink-0 min-w-0"
             aria-label={`${SITE.name} — home`}
           >
-            <span className="text-lg sm:text-2xl md:text-3xl font-serif font-semibold text-foreground tracking-tight">
+            <span className="text-base sm:text-xl md:text-2xl font-serif font-semibold text-foreground tracking-tight leading-tight">
               {SITE.name}
             </span>
           </Link>
@@ -78,7 +76,7 @@ export default function Header() {
               {SITE.phoneDisplay}
             </a>
             <a
-              href={bookingTelHref()}
+              href={bookingHashHref()}
               className="inline-flex items-center justify-center bg-primary text-primary-foreground px-6 py-2.5 rounded-full font-semibold text-sm hover:bg-primary/90 transition-colors shadow-sm min-h-11"
             >
               Book Appointment
@@ -137,7 +135,7 @@ export default function Header() {
               {SITE.phoneDisplay}
             </a>
             <a
-              href={bookingTelHref()}
+              href={bookingHashHref()}
               className="mt-4 bg-primary text-primary-foreground px-4 py-4 rounded-xl font-semibold text-base hover:bg-primary/90 transition-colors text-center min-h-12 flex items-center justify-center"
             >
               Book Appointment

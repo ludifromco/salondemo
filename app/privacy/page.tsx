@@ -20,13 +20,15 @@ export default function PrivacyPage() {
         </h1>
         <div className="text-muted-foreground space-y-4 text-sm leading-relaxed">
           <p>
-            This page is a placeholder for your salon&apos;s privacy policy. Replace this
-            content with details about what data you collect (for example, contact forms,
-            booking tools, analytics), how you use it, and how visitors can reach you with
-            privacy questions.
+            {SITE.name} respects your privacy. We only collect the information needed to
+            schedule appointments, answer questions, and improve your experience.
           </p>
           <p>
-            For questions, contact {SITE.name} at{' '}
+            We do not sell your personal information. Contact details you share are used only
+            for booking updates, service communication, and customer support.
+          </p>
+          <p>
+            For privacy questions, contact {SITE.name} at{' '}
             <a href={`tel:${SITE.phoneTel}`} className="text-primary hover:underline">
               {SITE.phoneDisplay}
             </a>

@@ -6,28 +6,28 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion'
-import { bookingTelHref } from '@/lib/site'
+import { bookingHashHref } from '@/lib/site'
 
 const faqs = [
   {
-    q: 'How do I book?',
-    a: 'Call us at the number on this page. We’ll find a time that works and confirm your service.',
+    q: 'How do I book an appointment?',
+    a: 'Tap any Book Appointment button and call us to reserve your preferred time.',
   },
   {
     q: 'Do you accept walk-ins?',
-    a: 'Walk-ins are welcome when we have availability. Calling ahead is the best way to secure your preferred time.',
+    a: 'Yes, when availability allows. Booking ahead is the best way to secure your slot.',
   },
   {
     q: 'What services do you offer?',
-    a: 'We offer hair, nails, lashes, facials, and waxing — full-service beauty in one location.',
+    a: 'We offer hair services, nails, facials, massage, and waxing.',
   },
   {
-    q: 'How long do appointments take?',
-    a: 'It depends on the service. Most visits range from 30 minutes to a few hours; we’ll give you a time estimate when you book.',
+    q: 'How long do services take?',
+    a: 'Most appointments take 45 to 120 minutes depending on your selected service.',
   },
   {
     q: 'What is your cancellation policy?',
-    a: 'Please give us at least 24 hours’ notice if you need to cancel or reschedule so we can offer the slot to another guest.',
+    a: 'Please provide at least 24 hours notice for cancellations or rescheduling.',
   },
 ]
 
@@ -60,7 +60,7 @@ export default function Faq() {
 
         <div className="text-center mt-12">
           <a
-            href={bookingTelHref()}
+            href={bookingHashHref()}
             className="inline-flex items-center justify-center bg-primary text-primary-foreground px-10 py-4 rounded-full font-semibold text-base hover:bg-primary/90 transition-colors min-h-12"
           >
             Book Appointment

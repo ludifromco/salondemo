@@ -12,10 +12,10 @@ export default function FinalCta() {
           id="final-cta-heading"
           className="text-3xl sm:text-4xl md:text-5xl font-serif font-semibold mb-5 text-balance"
         >
-          Ready to Book Your Appointment?
+          Ready to Relax and Refresh?
         </h2>
         <p className="text-lg text-white/80 mb-10 text-pretty leading-relaxed">
-          Secure your spot today.
+          Book your appointment today.
         </p>
         <a
           href={bookingTelHref()}

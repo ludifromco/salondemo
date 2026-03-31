@@ -49,18 +49,18 @@ const localBusinessJsonLd = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
-  title: `${SITE.name} | Full-Service Beauty Salon | Sun City Center, FL`,
+  title: `${SITE.name} | Salon and Spa | Sun City Center, FL`,
   description:
-    'Hair, nails, lashes, facials, and waxing in a clean, welcoming salon. Book your appointment at Silk Beauty Salon in Sun City Center.',
+    'Relaxing salon and spa care in Sun City Center. Hair, nails, facials, massage, and waxing with quick and easy booking.',
   keywords: [
-    'beauty salon',
+    'salon and spa',
     'Sun City Center',
     'hair salon',
     'nails',
-    'lashes',
     'facials',
+    'massage',
     'waxing',
-    'Silk Beauty Salon',
+    'Salon & Spa At Sun City Center',
   ],
   authors: [{ name: SITE.name }],
   creator: SITE.name,
@@ -71,23 +71,23 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: SITE.url,
     siteName: SITE.name,
-    title: `${SITE.name} | Full-Service Beauty Salon`,
+    title: `${SITE.name} | Relaxing Salon and Spa Care`,
     description:
-      'Full-service beauty care in Sun City Center — hair, nails, lashes, facials, and waxing. Book your visit today.',
+      'Full-service salon and spa treatments designed to help you look and feel amazing. Book your appointment today.',
     images: [
       {
         url: IMAGES.og,
         width: 1200,
         height: 630,
-        alt: 'Silk Beauty Salon — modern salon interior',
+        alt: 'Salon & Spa At Sun City Center — calming spa interior',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: `${SITE.name} | Full-Service Beauty Salon`,
+    title: `${SITE.name} | Relax. Refresh. Feel Your Best.`,
     description:
-      'Hair, nails, lashes, facials, and waxing in Sun City Center. Book your appointment.',
+      'Hair, nails, facials, massage, and waxing in Sun City Center. Quick and easy booking.',
   },
   icons: {
     icon: [

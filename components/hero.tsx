@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import { IMAGES } from '@/lib/images'
-import { bookingTelHref } from '@/lib/site'
+import { bookingHashHref } from '@/lib/site'
 
 export default function Hero() {
   const [isVisible, setIsVisible] = useState(false)
@@ -17,13 +17,13 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         <Image
           src={IMAGES.hero}
-          alt="Bright, modern salon interior at Silk Beauty Salon"
+          alt="Calming spa treatment room with soft natural light"
           fill
           className="object-cover"
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/45 to-black/55" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#10201a]/40 via-[#10201a]/35 to-[#10201a]/50" />
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-24 md:py-32">
@@ -33,19 +33,19 @@ export default function Hero() {
           }`}
         >
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-semibold text-white mb-6 text-pretty tracking-tight">
-            Your Beauty, Elevated.
+            Relax. Refresh. Feel Your Best.
           </h1>
           <p className="text-lg md:text-xl text-white/90 mb-10 max-w-2xl mx-auto text-pretty leading-relaxed">
-            Full-service beauty care designed to help you look and feel your best.
+            Full-service salon and spa treatments designed to help you look and feel amazing.
           </p>
           <a
-            href={bookingTelHref()}
+            href={bookingHashHref()}
             className="inline-flex items-center justify-center bg-primary text-primary-foreground px-10 md:px-12 py-4 md:py-[1.125rem] rounded-full font-semibold text-base md:text-lg hover:bg-primary/90 transition-all hover:shadow-lg min-h-14 shadow-md"
           >
             Book Appointment
           </a>
           <p className="mt-4 text-sm md:text-base text-white/85 font-medium">
-            Quick &amp; easy booking
+            Quick and easy booking
           </p>
         </div>
       </div>

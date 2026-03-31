@@ -2,30 +2,37 @@
 
 import { Check } from 'lucide-react'
 import { useInViewItemIds } from '@/hooks/use-in-view-item-ids'
-import { bookingTelHref } from '@/lib/site'
+import { bookingHashHref } from '@/lib/site'
 
 const pricingTiers = [
   {
     id: 1,
-    name: 'Basic',
+    name: 'Basic Care',
     range: '~$50–$70',
     description: 'Essential service',
-    features: ['Great for upkeep', 'Focused appointment', 'Clear, upfront options'],
+    features: ['Perfect for regular upkeep', 'Simple, focused appointment', 'Comfort-first care'],
   },
   {
     id: 2,
-    name: 'Standard',
+    name: 'Signature Treatment',
     range: '~$80–$120',
     description: 'Most popular services',
-    features: ['Our client favorites', 'Balanced time & value', 'Ideal for regular visits'],
+    features: ['Our most booked options', 'Balanced time and value', 'Great for monthly self-care'],
     highlighted: true,
   },
   {
     id: 3,
-    name: 'Premium',
+    name: 'Luxury Experience',
     range: '~$150+',
-    description: 'Full treatment',
-    features: ['Extra pampering', 'Comprehensive service', 'When you want the works'],
+    description: 'Full spa treatment',
+    features: ['Extended service time', 'Head-to-toe refresh', 'Premium relaxation experience'],
+  },
+  {
+    id: 4,
+    name: 'Monthly Wellness Plan',
+    range: 'From $129/mo',
+    description: 'Membership option',
+    features: ['One featured service per month', 'Priority booking windows', 'Member-only upgrade pricing'],
   },
 ]
 
@@ -40,14 +47,14 @@ export default function Pricing() {
             PRICING
           </span>
           <h2 className="text-4xl md:text-5xl font-serif font-semibold text-foreground mt-4 mb-6 text-balance">
-            Simple tiers, honest ranges
+            Clear pricing. Easy decisions.
           </h2>
           <p className="text-lg text-muted-foreground text-pretty leading-relaxed">
-            Exact pricing depends on the service you choose. Call us — we’ll match you to the right option.
+            Pick the level that fits your goals. Then reserve your appointment.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6 mb-14">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 md:gap-6 mb-14">
           {pricingTiers.map((tier, index) => (
             <div
               key={tier.id}
@@ -95,7 +102,7 @@ export default function Pricing() {
                   ))}
                 </ul>
                 <a
-                  href={bookingTelHref()}
+                  href={bookingHashHref()}
                   className="w-full bg-primary text-primary-foreground py-3.5 rounded-full font-semibold hover:bg-primary/90 transition-colors text-center min-h-11 inline-flex items-center justify-center"
                 >
                   Book Appointment
@@ -107,7 +114,7 @@ export default function Pricing() {
 
         <div className="text-center">
           <a
-            href={bookingTelHref()}
+            href={bookingHashHref()}
             className="inline-flex items-center justify-center bg-foreground text-background px-10 py-4 rounded-full font-semibold text-base hover:bg-foreground/90 transition-all min-h-12 shadow-md"
           >
             Book Appointment

@@ -8,27 +8,27 @@ import { IMAGES } from '@/lib/images'
 const galleryItems = [
   {
     id: 1,
-    title: 'Hair',
+    title: 'Hair Styling',
     before: IMAGES.beforeAfter.hairBefore,
     after: IMAGES.beforeAfter.hairAfter,
-    beforeCaption: 'Before — everyday style',
-    afterCaption: 'After — cut & finish',
+    beforeCaption: 'Before - grown-out style',
+    afterCaption: 'After - polished finish',
   },
   {
     id: 2,
-    title: 'Skin',
+    title: 'Skin Renewal',
     before: IMAGES.beforeAfter.skinBefore,
     after: IMAGES.beforeAfter.skinAfter,
-    beforeCaption: 'Before — at-home routine',
-    afterCaption: 'After — facial glow',
+    beforeCaption: 'Before - dull texture',
+    afterCaption: 'After - healthy glow',
   },
   {
     id: 3,
-    title: 'Lashes',
-    before: IMAGES.beforeAfter.lashesBefore,
-    after: IMAGES.beforeAfter.lashesAfter,
-    beforeCaption: 'Before — natural lash line',
-    afterCaption: 'After — fuller lashes',
+    title: 'Nail Care',
+    before: IMAGES.beforeAfter.nailsBefore,
+    after: IMAGES.beforeAfter.nailsAfter,
+    beforeCaption: 'Before - uneven nails',
+    afterCaption: 'After - clean, polished result',
   },
 ]
 
@@ -90,10 +90,10 @@ export default function Gallery() {
             <Heart className="text-accent" size={22} aria-hidden />
           </div>
           <h2 className="text-4xl md:text-5xl font-serif font-semibold text-foreground mb-6 text-balance">
-            Transformations you can see
+            Before and after transformations
           </h2>
           <p className="text-lg text-muted-foreground text-pretty leading-relaxed">
-            Real results from real clients
+            Real results from our clients
           </p>
         </div>
 

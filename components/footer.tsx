@@ -12,8 +12,8 @@ export default function Footer() {
           <div>
             <h2 className="text-2xl font-serif font-semibold mb-4">{SITE.name}</h2>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Full-service beauty in Sun City Center — hair, nails, lashes, facials, and waxing
-              in a professional, welcoming space.
+              Professional salon and spa care in a clean, calming space designed around your
+              comfort.
             </p>
             <a
               href={bookingTelHref()}
@@ -41,7 +41,7 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold mb-4 flex gap-2 items-center text-foreground">
               <Clock size={20} className="text-accent shrink-0" aria-hidden />
-              Hours
+              Business hours
             </h3>
             <div className="text-muted-foreground text-sm space-y-1.5">
               <p>{SITE.hours.weekday}</p>

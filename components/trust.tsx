@@ -17,11 +17,11 @@ export default function Trust() {
           id="trust-heading"
           className="text-3xl md:text-4xl font-serif font-semibold text-foreground mb-5 text-balance"
         >
-          Your Satisfaction Comes First
+          Your Comfort &amp; Satisfaction Matter
         </h2>
         <p className="text-lg text-muted-foreground text-pretty leading-relaxed max-w-2xl mx-auto">
-          We take pride in every service we provide. If you&apos;re not satisfied, we&apos;ll
-          make it right.
+          We&apos;re committed to providing a relaxing experience and results you&apos;ll love.
+          If you&apos;re not satisfied, we&apos;ll make it right.
         </p>
       </div>
     </section>

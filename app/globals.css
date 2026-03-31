@@ -4,42 +4,42 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Soft white / light neutral base */
-  --background: #f9f7f6;
-  --foreground: #1a1a1a;
+  /* Soft white / cream base */
+  --background: #f8f7f2;
+  --foreground: #1c2421;
   --card: #ffffff;
-  --card-foreground: #1a1a1a;
+  --card-foreground: #1c2421;
   --popover: #ffffff;
-  --popover-foreground: #1a1a1a;
-  /* Accent: soft pink — primary actions */
-  --primary: #c4717d;
+  --popover-foreground: #1c2421;
+  /* Calm blue-green for primary booking actions */
+  --primary: #3f7f7b;
   --primary-foreground: #ffffff;
-  --secondary: #ece8e5;
-  --secondary-foreground: #1a1a1a;
-  --muted: #ece8e5;
-  --muted-foreground: #5c5c5c;
-  /* Muted gold highlights */
-  --accent: #b8956a;
-  --accent-foreground: #1a1a1a;
+  --secondary: #edf2ed;
+  --secondary-foreground: #1c2421;
+  --muted: #eef2ef;
+  --muted-foreground: #556260;
+  /* Soft gold accent for highlights */
+  --accent: #b89a69;
+  --accent-foreground: #1c2421;
   --destructive: #dc2626;
   --destructive-foreground: #ffffff;
-  --border: #e5e0dc;
-  --input: #f3f0ed;
-  --ring: #c4717d;
-  --chart-1: #c4717d;
+  --border: #dfe6df;
+  --input: #f4f7f4;
+  --ring: #3f7f7b;
+  --chart-1: #3f7f7b;
   --chart-2: #b8956a;
   --chart-3: #ece8e5;
-  --chart-4: #1a1a1a;
-  --chart-5: #5c5c5c;
+  --chart-4: #1c2421;
+  --chart-5: #556260;
   --radius: 0.625rem;
   --sidebar: #ffffff;
-  --sidebar-foreground: #1a1a1a;
-  --sidebar-primary: #c4717d;
+  --sidebar-foreground: #1c2421;
+  --sidebar-primary: #3f7f7b;
   --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #ece8e5;
-  --sidebar-accent-foreground: #1a1a1a;
-  --sidebar-border: #e5e0dc;
-  --sidebar-ring: #c4717d;
+  --sidebar-accent: #eef2ef;
+  --sidebar-accent-foreground: #1c2421;
+  --sidebar-border: #dfe6df;
+  --sidebar-ring: #3f7f7b;
 }
 
 .dark {

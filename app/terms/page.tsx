@@ -20,12 +20,15 @@ export default function TermsPage() {
         </h1>
         <div className="text-muted-foreground space-y-4 text-sm leading-relaxed">
           <p>
-            This page is a placeholder for your terms of service. Add your cancellation
-            policy, deposits, liability limitations, and any rules for using your website
-            or booking system.
+            By booking with {SITE.name}, you agree to arrive on time and provide at least
+            24 hours notice for cancellations or rescheduling.
           </p>
           <p>
-            For questions, contact {SITE.name} at{' '}
+            Late arrivals may shorten service time to avoid delays for other guests. Service
+            pricing and availability are subject to change.
+          </p>
+          <p>
+            For questions about these terms, contact {SITE.name} at{' '}
             <a href={`tel:${SITE.phoneTel}`} className="text-primary hover:underline">
               {SITE.phoneDisplay}
             </a>

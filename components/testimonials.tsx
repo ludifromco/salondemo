@@ -6,39 +6,39 @@ import { useInViewItemIds } from '@/hooks/use-in-view-item-ids'
 const testimonials = [
   {
     id: 1,
-    attribution: 'Maria G.',
+    attribution: 'Linda M.',
     rating: 5,
-    text: 'I’ve been coming here for months and always leave feeling amazing.',
+    text: 'I always leave feeling relaxed and refreshed.',
   },
   {
     id: 2,
-    attribution: 'Jessica T.',
+    attribution: 'Karen D.',
     rating: 5,
-    text: 'Very professional and clean. Highly recommend!',
+    text: 'The staff is so professional and the space is very clean.',
   },
   {
     id: 3,
-    attribution: 'Ashley R.',
+    attribution: 'Michelle R.',
     rating: 5,
-    text: 'Booking was easy and the results exceeded my expectations.',
+    text: 'Best spa experience I have had in a long time.',
   },
   {
     id: 4,
-    attribution: 'Nicole P.',
+    attribution: 'Susan T.',
     rating: 5,
-    text: 'The team listens to what you want and delivers every time. My go-to salon.',
+    text: 'Easy booking and amazing results every time.',
   },
   {
     id: 5,
-    attribution: 'Rachel M.',
+    attribution: 'Patricia L.',
     rating: 5,
-    text: 'Friendly staff, calm atmosphere, and my nails always look perfect.',
+    text: 'My facial and massage were both excellent. I felt cared for from start to finish.',
   },
   {
     id: 6,
-    attribution: 'Danielle K.',
+    attribution: 'Diane B.',
     rating: 5,
-    text: 'I love that I can get my hair, lashes, and a facial in one visit.',
+    text: 'I booked for nails and left with so much confidence. Beautiful results.',
   },
 ]
 
@@ -57,10 +57,10 @@ export default function Testimonials() {
             <Star className="text-accent fill-accent" size={22} aria-hidden />
           </div>
           <h2 className="text-4xl md:text-5xl font-serif font-semibold text-foreground mb-6 text-balance">
-            Loved by locals
+            Trusted by local clients
           </h2>
           <p className="text-lg text-muted-foreground text-pretty leading-relaxed">
-            A few words from clients who book with us again and again.
+            Real feedback from guests who keep coming back.
           </p>
         </div>
 
